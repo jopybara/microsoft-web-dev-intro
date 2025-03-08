@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Introduction to Web Development</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>I love this course.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="filter-projects">
+                <button onclick="filterProjects('all')">All</button>
+                <button onclick="filterProjects('html-css-js')">HTML/CSS/JS</button>
+                <button onclick="filterProjects('react-node')">React/Node</button>
+                <button onclick="filterProjects('python-django')">Python/Django</button>
+            </div>
+            <div class="project-container">
+                <article class="project html-css-js">
+                    <h3>Project 1</h3>
+                    <figure>
+                        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-256.png" alt="HTML 5 logo">
+                        <figcaption>Project 1 Description</figcaption>
+                    </figure>
+                    <p>This is a placeholder description for Project 1. It showcases the use of HTML, CSS, and JavaScript.</p>
+                </article>
+                <article class="project react-node">
+                    <h3>Project 2</h3>
+                    <figure>
+                        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-256.png" alt="Node.js logo">
+                        <figcaption>Project 2 Description</figcaption>
+                    </figure>
+                    <p>This is a placeholder description for Project 2. It demonstrates the use of React and Node.js.</p>
+                </article>
+                <article class="project python-django">
+                    <h3>Project 3</h3>
+                    <figure>
+                        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-256.png" alt="Python logo">
+                        <figcaption>Project 3 Description</figcaption>
+                    </figure>
+                    <p>This is a placeholder description for Project 3. It highlights the use of Python and Django.</p>
+                </article>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>Vue.js</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>SQL</li>
+                <li>Git</li>
+                <li>Agile Methodologies</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" data-name="Name" placeholder="Enter your name" aria-placeholder="Enter your name">
+                <span class="invalid-input"></span>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" data-name="Email" placeholder="Enter your email" aria-placeholder="Enter your email">
+                <span class="invalid-input"></span>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" data-name="Message" placeholder="Enter your message" aria-placeholder="Enter your message"></textarea>
+                <span class="invalid-input"></span>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Blazor Course. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
